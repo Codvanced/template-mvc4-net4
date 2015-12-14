@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CD2E917-56F0-4E62-9A59-3E74BA9A1FDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NAME_REPLACE.Binding</RootNamespace>
+    <AssemblyName>NAME_REPLACE.Binding</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DryIoc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DryIoc.dll.2.1.0\lib\net40\DryIoc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IOC.FW.ContainerManager, Version=1.0.0.15795, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IocFrameworkDependencies\IOC.FW.ContainerManager.dll</HintPath>
+    </Reference>
+    <Reference Include="IOC.FW.Core, Version=1.0.0.15794, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IocFrameworkDependencies\IOC.FW.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IOC.FW.Logging">
+      <HintPath>..\IocFrameworkDependencies\IOC.FW.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="IOC.FW.Repository, Version=1.0.0.15794, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IocFrameworkDependencies\IOC.FW.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="IOC.FW.Shared, Version=1.0.0.15793, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IocFrameworkDependencies\IOC.FW.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessBinder.cs" />
+    <Compile Include="DaoBinder.cs" />
+    <Compile Include="FrameworkBinder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedBinder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NAME_REPLACE.Abstraction\NAME_REPLACE.Abstraction.csproj">
+      <Project>{7f22fd06-01bd-4db8-b9ec-56584c88a02f}</Project>
+      <Name>NAME_REPLACE.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAME_REPLACE.Business\NAME_REPLACE.Business.csproj">
+      <Project>{0110581d-35a7-47f1-8e54-cee77734d2db}</Project>
+      <Name>NAME_REPLACE.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAME_REPLACE.Common.Abstraction\NAME_REPLACE.Common.Abstraction.csproj">
+      <Project>{0ef0726e-3e34-4362-84f6-ba1a8fcf8d14}</Project>
+      <Name>NAME_REPLACE.Common.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAME_REPLACE.Common.Business\NAME_REPLACE.Common.Business.csproj">
+      <Project>{b3b2b090-fc3b-4548-84eb-8f5298bae78a}</Project>
+      <Name>NAME_REPLACE.Common.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAME_REPLACE.DAO\NAME_REPLACE.DAO.csproj">
+      <Project>{7e4a0769-38f4-4213-b7e4-2fedd847f1e3}</Project>
+      <Name>NAME_REPLACE.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAME_REPLACE\NAME_REPLACE.csproj">
+      <Project>{f464c056-1b4a-4477-8168-9304241b9c7d}</Project>
+      <Name>NAME_REPLACE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
