@@ -32,11 +32,11 @@
   <ItemGroup>
     <Reference Include="IOC.FW.Core, Version=1.0.0.21299, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Core.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Core.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Shared, Version=1.0.0.15793, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Shared.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

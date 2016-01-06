@@ -44,22 +44,22 @@
     </Reference>
     <Reference Include="IOC.FW.ContainerManager, Version=1.0.0.15795, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.ContainerManager.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.ContainerManager.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Core, Version=1.0.0.15794, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Core.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Core.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Logging">
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Logging.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Logging.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Repository, Version=1.0.0.15794, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Repository.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Repository.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Shared, Version=1.0.0.15793, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Shared.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Shared.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>

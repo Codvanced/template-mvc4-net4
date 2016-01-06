@@ -50,13 +50,13 @@
       <HintPath>..\packages\DryIoc.dll.2.1.0\lib\net40\DryIoc.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.ContainerManager">
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.ContainerManager.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.ContainerManager.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Core">
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Core.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Core.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Shared">
-      <HintPath>..\IocFrameworkDependencies\IOC.FW.Shared.dll</HintPath>
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
