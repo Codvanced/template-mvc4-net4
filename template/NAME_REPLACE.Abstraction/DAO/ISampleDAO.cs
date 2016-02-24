@@ -1,5 +1,5 @@
-﻿using IOC.FW.Core.Abstraction.Repository;
-
+﻿
+using IOC.FW.Abstraction.Repository;
 using NAME_REPLACE.Entities;
 
 namespace NAME_REPLACE.Abstraction.DAO

@@ -1,9 +1,7 @@
-﻿using NAME_REPLACE.Abstraction.Business;
+﻿using IOC.FW.Repository;
+using NAME_REPLACE.Abstraction.Business;
 using NAME_REPLACE.Abstraction.DAO;
 using NAME_REPLACE.Entities;
-
-using IOC.FW.Core.Implementation.Base;
-
 using System;
 
 namespace NAME_REPLACE.Business
