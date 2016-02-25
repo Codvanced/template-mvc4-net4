@@ -14,6 +14,7 @@ namespace NAME_REPLACE.WebMvcApp
 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
             IoCFrameworkConfig.Register(GlobalConfiguration.Configuration);
         }
     }
