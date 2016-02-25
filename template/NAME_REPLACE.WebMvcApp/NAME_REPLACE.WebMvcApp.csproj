@@ -57,7 +57,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CodvancedFwReferences\IOC.FW.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="IOC.FW.ContainerManager">
+    <Reference Include="IOC.FW.ContainerManager, Version=1.0.0.16637, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CodvancedFwReferences\IOC.FW.ContainerManager.dll</HintPath>
     </Reference>
     <Reference Include="IOC.FW.Core, Version=1.0.0.16635, Culture=neutral, processorArchitecture=MSIL">
@@ -154,7 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\IoCFrameworkConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -164,6 +164,7 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
     <Content Include="web.config" />
     <Content Include="web.Debug.config">
@@ -212,9 +213,6 @@
     <Content Include="Config\smtp-settings.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Config\ioc-framework.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

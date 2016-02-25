@@ -2,11 +2,15 @@
 using IOC.FW.ContainerManager.DryIoc;
 using IOC.FW.Web.MVC.DIContainer.DryIoc;
 using NAME_REPLACE.Binding;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Http;
 
 namespace NAME_REPLACE.WebMvcApp
 {
-    public class IoCFrameworkConfig
+    public static class IoCFrameworkConfig
     {
         public static void Register(HttpConfiguration config)
         {

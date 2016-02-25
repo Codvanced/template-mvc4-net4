@@ -30,23 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IOC.FW.Abstraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="IOC.FW.Abstraction">
       <HintPath>..\CodvancedFwReferences\IOC.FW.Abstraction.dll</HintPath>
     </Reference>
-    <Reference Include="IOC.FW.Core">
+    <Reference Include="IOC.FW.Core, Version=1.0.0.15794, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CodvancedFwReferences\IOC.FW.Core.dll</HintPath>
     </Reference>
-    <Reference Include="IOC.FW.Repository, Version=1.0.0.16637, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="IOC.FW.Repository">
       <HintPath>..\CodvancedFwReferences\IOC.FW.Repository.dll</HintPath>
     </Reference>
-    <Reference Include="IOC.FW.Shared, Version=1.0.0.16635, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="IOC.FW.Shared, Version=1.0.0.15793, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CodvancedFwReferences\IOC.FW.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -71,10 +69,6 @@
   <ItemGroup>
     <Folder Include="Plugins\" />
     <Folder Include="Validations\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
