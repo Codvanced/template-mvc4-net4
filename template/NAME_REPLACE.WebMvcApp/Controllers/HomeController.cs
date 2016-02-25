@@ -1,4 +1,4 @@
-﻿using IOC.FW.Core.Abstraction.Business;
+﻿using IOC.FW.Abstraction.Business;
 using NAME_REPLACE.Entities;
 using System;
 using System.Collections.Generic;
