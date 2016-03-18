@@ -30,10 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IOC.FW.Core">
+    <Reference Include="IOC.FW.Abstraction">
+      <HintPath>..\CodvancedFwReferences\IOC.FW.Abstraction.dll</HintPath>
+    </Reference>
+    <Reference Include="IOC.FW.Core, Version=1.0.0.15794, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CodvancedFwReferences\IOC.FW.Core.dll</HintPath>
     </Reference>
-    <Reference Include="IOC.FW.Shared">
+    <Reference Include="IOC.FW.Shared, Version=1.0.0.15793, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CodvancedFwReferences\IOC.FW.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System" />

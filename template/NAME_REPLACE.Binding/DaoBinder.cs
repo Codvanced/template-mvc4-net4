@@ -1,5 +1,5 @@
-﻿using IOC.FW.Core.Abstraction.Container;
-using IOC.FW.Core.Abstraction.Container.Binding;
+﻿using IOC.FW.Abstraction.Container;
+using IOC.FW.Abstraction.Container.Binding;
 using IOC.FW.Shared.Enumerators;
 
 using NAME_REPLACE.Abstraction.DAO;

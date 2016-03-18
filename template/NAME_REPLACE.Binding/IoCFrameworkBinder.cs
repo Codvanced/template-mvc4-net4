@@ -1,9 +1,8 @@
-﻿using IOC.FW.Core.Abstraction.Business;
-using IOC.FW.Core.Abstraction.Container;
-using IOC.FW.Core.Abstraction.Container.Binding;
-using IOC.FW.Core.Abstraction.Logging;
-using IOC.FW.Core.Abstraction.Repository;
-using IOC.FW.Core.Implementation.Base;
+﻿using IOC.FW.Abstraction.Business;
+using IOC.FW.Abstraction.Container;
+using IOC.FW.Abstraction.Container.Binding;
+using IOC.FW.Abstraction.Logging;
+using IOC.FW.Abstraction.Repository;
 using IOC.FW.Logging.Log4net;
 using IOC.FW.Repository;
 using IOC.FW.Repository.ADO;
@@ -15,7 +14,7 @@ using System.Collections.Generic;
 
 namespace NAME_REPLACE.Binding
 {
-    public class FrameworkBinder : IBinding
+    public class IoCFrameworkBinder : IBinding
     {
         public void SetBinding(IAdapter adapter)
         {
